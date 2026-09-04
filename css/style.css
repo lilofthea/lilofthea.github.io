@@ -50,31 +50,6 @@ li{ margin-bottom: .4em; }
 a{ color: inherit; text-decoration: none; }
 .container{ max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 
-/* ---------- Ticker ---------- */
-.ticker{
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  color: #0b0e14;
-  overflow: hidden;
-  white-space: nowrap;
-  font-family: var(--font-mono);
-  font-size: .78rem;
-  font-weight: 500;
-  letter-spacing: .02em;
-}
-.ticker__track{
-  display: inline-flex;
-  gap: .6em;
-  padding: 7px 0;
-  animation: ticker 32s linear infinite;
-  will-change: transform;
-}
-.ticker__track span{ padding: 0 .2em; }
-.ticker .dot{ opacity: .55; }
-@keyframes ticker{
-  from{ transform: translateX(0); }
-  to{ transform: translateX(-50%); }
-}
-
 /* ---------- Nav ---------- */
 .nav{
   position: sticky; top:0; z-index: 100;
